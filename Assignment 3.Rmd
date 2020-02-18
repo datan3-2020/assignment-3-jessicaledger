@@ -27,7 +27,6 @@ The only thing you need to do for this code to work on your computer is to provi
 library(tidyverse)
 library(data.table)
 library(dplyr)
-library(reshape2)
 # data.table is faster compared to readr so we'll use it in this case (the function fread()). You need to install this package first to be able to run this code.
 # create a vector with the file names and paths
 files <- dir(
@@ -211,7 +210,7 @@ Delta1
 4. GRAPH
 ```{r}
 scatter.smooth(Delta1,
-               xlab = "Age (at wave 1)",
+               xlab = "Age at wave 1",
                ylab = "Mean Delta",
                main = "Change in Political Interest with Age")
 
